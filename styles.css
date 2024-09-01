@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  font-size: 14px;
+  font-family: "Inter", system-ui;
+  background: var(--grey-900);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main {
+  background: var(--grey-800);
+  width: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 12px;
+  gap: 26px;
+}
+
+@media (width < 425px) {
+  main {
+    width: 327px;
+    padding: 25px;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.profile img {
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.info h1 {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.info p {
+  font-weight: 600;
+  color: var(--green);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.links button {
+  background: var(--grey-700);
+  border-radius: 8px;
+  width: 200px;
+  border: 0;
+  width: 100%;
+  padding: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.links button:hover,
+.links button:focus {
+  background: var(--green);
+  color: var(--grey-900);
+  cursor: pointer;
+  outline: none;
+}
